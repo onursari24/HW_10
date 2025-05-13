@@ -1,1 +1,47 @@
-deneme
+    1  clear
+    2  git config --global user.name "onursari24"
+    3  git config --global user.email "sari.onur@outlook.com"
+    4  git config --global --list
+    5  cd ~/Desktop/git_odev
+    6  git clone https://github.com/onursari24/HW_10.git
+    7  ls HW_10
+    8  git add README.md
+    9  ls
+   10  cd HW_10
+   11  ls
+   12  git add README.md
+   13  git commit -m "README dosyasına açıklama eklendi"
+   14  git push origin master
+   15  git push origin main
+   16  git clone https://github.com/onursari24/HW_10.git
+   17  cd HW_10
+   18  touch text_ignore.txt
+   19  notepad .gitignore
+   20  git status
+   21  git add .
+   22  git commit -m "text_ignore.txt dosyası eklendi ve .gitignore güncellendi"
+   23  git push origin main
+   24  cd ~/Desktop/git_odev/HW_10
+   25  touch command_list.csv
+   26  notepad command_list.csv
+   27  git add command_list.csv
+   28  git commit -m "command_list.csv dosyası eklendi"
+   29  git push origin main
+   30  git pull origin main
+   31  git push origin main
+   32  touch main_test.txt
+   33  git add .
+   34  git commit -m "Add main_test.txt file"
+   35  git push origin main
+   36  git checkout -b develop
+   37  touch develop_test.txt
+   38  git add .
+   39  git commit -m "Add develop_test.txt file"
+   40  git status
+   41  git add .
+   42  git commit -m "Update develop_test.txt"
+   43  git push origin develop
+   44  git checkout main
+   45  git merge develop
+   46  git log
+   47  history > command_list.csv
